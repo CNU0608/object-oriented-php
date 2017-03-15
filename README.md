@@ -82,21 +82,25 @@ namespaces文件执行的命名空间标准需要查看依赖包下得composer.j
       ```
         $ composer config -g repo.packagist composer https://packagist.phpcomposer.com
       ```
->单个项目配置: 将配置信息添加到某个项目的 composer.json 文件中。
-修改当前项目的 composer.json 配置文件:
-打开命令行窗口(windows用户)或控制台(Linux、Mac 用户)，进入你的项目的根目录(也就是 composer.json 文件所在目录)，执行如下命令:
-```
-    $ composer config repo.packagist composer https://packagist.phpcomposer.com
-
-```
-+ 上述命令将会在当前项目中的 composer.json 文件的末尾自动添加镜像的配置信息(也可以自己手工添加):
-```
+    >单个项目配置: 将配置信息添加到某个项目的 composer.json 文件中。
+    修改当前项目的 composer.json 配置文件:
+    打开命令行窗口(windows用户)或控制台(Linux、Mac 用户)，进入你的项目的根目录(也就是 composer.json 文件所在目录)，执行如下命令:
+    ```
+        $ composer config repo.packagist composer https://packagist.phpcomposer.com
     
-    "repositories": {
-        "packagist": {
-            "type": "composer", 
-            "url": "https://packagist.phpcomposer.com" 
+    ```
+    + 上述命令将会在当前项目中的 composer.json 文件的末尾自动添加镜像的配置信息(也可以自己手工添加):
+    ```
+        
+        "repositories": {
+            "packagist": {
+                "type": "composer", 
+                "url": "https://packagist.phpcomposer.com" 
+            }
         }
-    }
+    
+    ```
++ 06：使用composer创建项目
 
-```
+    - 常见命令 ：composer create-project
+    - composer创建项目终端命令：composer create-project <原始名字>/<默认名字> <别名> <版本号>
