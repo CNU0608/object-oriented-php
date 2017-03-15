@@ -104,3 +104,12 @@ namespaces文件执行的命名空间标准需要查看依赖包下得composer.j
 
     - 常见命令 ：composer create-project
     - composer创建项目终端命令：composer create-project <原始名字>/<默认名字> <别名> <版本号>
+    
+    + 项目运行
+    ```
+        // 1. 自定义
+        $ php -S localhost:8888 -t public
+        
+        // php默认
+        $ php artisan serve
+    ```
