@@ -110,6 +110,6 @@ namespaces文件执行的命名空间标准需要查看依赖包下得composer.j
         // 1. 自定义
         $ php -S localhost:8888 -t public
         
-        // php默认
+        // 2. php默认
         $ php artisan serve
     ```
